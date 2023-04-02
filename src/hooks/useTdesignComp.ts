@@ -4,7 +4,7 @@ import tdesignCssVar from './tdesignCssVar';
 
 export default function useTdesignComp<Name extends keyof Lib>(compName: Name): Lib[Name] {
   const { Comp, getSubVal } = useRemoteCompAndSubVal('hel-tdesign-react', compName, {
-    shadow: true, setStyleAsString: false, appendCss: true,
+    shadow: true,
     // tdesign 有一些自己的css变量定义，这些定义未参与css打包，此处人工补偿一下
     handleStyleStr: (str: string) => `${tdesignCssVar} ${str}`,
     ignoreHelContext: true,

@@ -31,14 +31,13 @@
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
-    "hel-dev-utils": "^2.3.1",
-    "hel-lib-proxy": "^3.13.0",
-    "hel-lodash": ">=1.0.0",
-    "hel-micro": "^3.13.7",
-    "hel-micro-core": "^3.13.2",
-    "hel-micro-react": "^3.10.1",
-    "hel-tdesign-react": "^1.1.4",
-    "hel-tpl-remote-lib": ">=1.0.0",
+    "hel-dev-utils": "^4.0.2",
+    "hel-iso": "^4.0.3",
+    "hel-lodash": "^2.2.0",
+    "hel-micro": "^4.0.2",
+    "hel-micro-react": "^4.0.3",
+    "hel-tdesign-react": "^1.2.0",
+    "hel-tpl-remote-lib": "^2.2.0",
     "hel-types": "^3.8.2",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
@@ -56,6 +55,7 @@
     "react-app-polyfill": "^3.0.0",
     "react-dev-utils": "^12.0.1",
     "react-dom": "^16.14.0",
+    "react-is": "^16.13.1",
     "react-refresh": "^0.11.0",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
@@ -73,7 +73,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "cross-env PORT=3000 node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "check": "node scripts/check.js"
@@ -153,6 +153,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-is": "^16.7.2",
     "@typescript-eslint/eslint-plugin": "^5.27.1"
   }
 }

@@ -18,7 +18,7 @@ function TestOtherCompLocalDebug() {
     custom: {
       // host: 'http://localhost:3103',
       host: 'http://127.0.0.1:8103',
-      enable: true,
+      enable: false,
       extraCssList: [],
     },
   });
