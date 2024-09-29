@@ -8,7 +8,7 @@ import TestOtherCompLocalDebug from './components/TestOtherCompLocalDebug';
 const stLabel: React.CSSProperties = { padding: '0 12px' };
 
 function App() {
-  const [curView, setView] = React.useState('view1');
+  const [curView, setView] = React.useState('view3');
   const isView1 = curView === 'view1';
   const isView2 = curView === 'view2';
   const isView3 = curView === 'view3';
